@@ -1,12 +1,16 @@
-export default function UploadResume({ setResume }) {
+import '../styles/components.css'
+
+function UploadResume({ onFileUpload }) {
   return (
-    <div className="mb-4">
+    <div className="upload-container">
       <input
         type="file"
-        accept=".pdf"
-        onChange={(e) => setResume(e.target.files[0])}
-        className="border p-2 rounded"
+        className="file-input"
+        onChange={onFileUpload}
+        accept=".pdf,.doc,.docx"
       />
     </div>
-  );
+  )
 }
+
+export default UploadResume

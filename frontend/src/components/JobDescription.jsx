@@ -1,10 +1,16 @@
-export default function JobDescription({ jobDesc, setJobDesc }) {
+import '../styles/components.css'
+
+function JobDescription({ jobDescription, setJobDescription }) {
   return (
-    <textarea
-      value={jobDesc}
-      onChange={(e) => setJobDesc(e.target.value)}
-      placeholder="Paste Job Description here..."
-      className="w-96 h-40 border p-3 rounded"
-    />
-  );
+    <div className="job-description-container">
+      <textarea
+        className="job-description-textarea"
+        placeholder="Paste job description here..."
+        value={jobDescription}
+        onChange={(e) => setJobDescription(e.target.value)}
+      />
+    </div>
+  )
 }
+
+export default JobDescription

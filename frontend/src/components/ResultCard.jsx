@@ -1,9 +1,15 @@
-export default function ResultCard({ result }) {
+import '../styles/components.css'
+
+function ResultCard({ score, feedback }) {
   return (
-    <div className="mt-6 bg-white p-4 rounded shadow w-96">
-      <h2 className="font-semibold">Result for: {result.filename}</h2>
-      <p className="text-lg mt-2">Score: <b>{result.score}/10</b></p>
-      <p className="mt-2 text-gray-700">{result.justification}</p>
+    <div className="result-card">
+      <h2 className="result-title">Match Score: {score}/10</h2>
+      <div className="result-feedback">
+        <h3 className="feedback-title">Feedback:</h3>
+        <p className="feedback-text">{feedback}</p>
+      </div>
     </div>
-  );
+  )
 }
+
+export default ResultCard
