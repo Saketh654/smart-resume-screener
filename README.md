@@ -149,3 +149,6 @@ This project is licensed under the MIT License.
 - FastAPI
 - React + Vite
 - All contributors
+
+## Demo Video Link
+[https://drive.google.com/drive/folders/1C00gljRvamgXMpBqKRlIyjTpRfAIbtcm?usp=sharing]
